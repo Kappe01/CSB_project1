@@ -30,7 +30,7 @@ def index(request):
         # todos = cursor.fetchall()
         # cursor.close()
         # connection.close()
-        todos = [row[0] for row in todos]
+        # todos = [row[0] for row in todos]
         print(todos)
         if not todos:
             todos = ["No todos"]
