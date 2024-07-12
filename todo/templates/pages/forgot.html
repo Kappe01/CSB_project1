@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgot Password Page</title>
+</head>
+<body>
+    <div>
+        <h2>Forgot Password</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <button type="submit">Get security question for username</button>
+            </div>
+        </form>
+</body>
+</html>

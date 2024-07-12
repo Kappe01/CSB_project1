@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Page</title>
+</head>
+<body>
+    <div>
+        <h2>Register</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="security">Security question</label>
+                <select id="security" name="security" required>
+                    <option value="Childhood home address">Childhood home address</option>
+                    <option value="Name of first pet">Name of first pet</option>
+                </select>
+            </div>
+            <div>
+                <label for="security_answer">Security answer</label>
+                <input type="text" id="security_answer" name="security_answer" required>
+            </div>
+            </div>
+            <div>
+                <button type="submit">Register</button>
+            </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

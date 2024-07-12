@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Password Page</title>
+</head>
+<body>
+    <div>
+        <h2>Change Password</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div>
+                Security question: {{ security_question }}?
+            </div>
+            <div>
+                <label for="security_answer">Security answer</label>
+                <input type="text" id="security_answer" name="security_answer" required>
+            </div>
+            <div>
+                <label for="password">New password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <button type="submit">Change password</button>
+            </div>
+        </form>
+    </div>
+</html>

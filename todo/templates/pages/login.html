@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <div>
+        <h2>Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <a href="/forgot">Forgot password?</a>
+            </div>
+            <div>
+                <button type="submit">Login</button>
+            </form>
+                <button onclick="window.location.href='/register'">Register</button>
+            </div>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
